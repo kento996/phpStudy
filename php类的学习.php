@@ -5,8 +5,15 @@ class a{
     var $gender;
     //构造函数
     function __construct($name){
-        return $this->name;
+        $this->name=$name;
     }
+    //析构函数
+    function __destruct()
+    {
+        echo "I'm break!";
+    }
+
+    //成员函数
     function getName(){
         return $this->name;
     }
